@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+ <html lang="fr">
+ 
+  <head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Chapitre 03</title>
+   <link rel="stylesheet" href="style.css">
+   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+   <style>
+   h1{
+   margin-bottom: 0;
+		text-align: center;
+		color: #008080;
+   }
+   .container {
+        max-width: 1000px;
+        margin: 0 auto;
+        padding: 20px;
+        border-radius: 5px;
+        box-shadow: 0 0 10px rgba(0, 0, 0);
+      }
+      .row {
+        display: flex;
+        flex-wrap: wrap;
+        margin: 10px 0;
+      }
+      .col {
+        flex: 25;
+        margin: 10px;
+        padding: 10px;
+        background-color: black;
+        border-radius: 5px;
+        box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+      }
+	  .col h3 {
+        margin-bottom: 0;
+		margin-top: 0;
+		font-size: 1.2em;
+		text-align: center;
+      }
+	  .col h4 {
+		margin-top: 10px;
+		font-size: 1em;
+		text-align: center;
+      }
+	  .col img{
+	  width:140px;
+	  height:130px;
+	  object-fit:cover;
+	  border-radius:40%;
+	  float:left;
+	  shape-outside:margin-box;
+	  margin: 0 20px 5px 0;
+	  margin-right:10px;
+	  }
+	  .container h2{
+	    margin-bottom: 5px;
+		margin-top:10px;
+		text-align: center;
+		color:white;
+		box-shadow: 3px 3px 7px white;
+	  }
+	  .container::after{
+		content:"";
+		display:block;
+		clear:both;
+	  }
+	  </style>
+  </head>
+
+  <body>
+   <nav>
+      <ul class="liste-items">
+          <li class="items"><a href="<nav>
+            <ul class="liste-items">
+                <li class="items"><a href="TIC.html">Acceuil</a></li>
+                <li class="items"=color:white;>
+              Chapitres
+              <span>&#9660;</span>
+              <ul class="sous-liste">
+                  <li class="items-sous-liste"><a href="chap1.html">Chapitre 01</a></li>
+                  <li class="items-sous-liste"><a href="chap2.html">Chapitre 02</a></li>
+                  <li class="items-sous-liste"><a href="chap3.html">Chapitre 03</a></li>
+                  <li class="items-sous-liste"><a href="chap4.html">Chapitre 04</a></li>
+                  <li class="items-sous-liste"><a href="chap5.html">Chapitre 05</a></li>
+              </ul>
+          </li>
+          <li class="items"><a href="info.html">Informations</a></li>
+    
+      </ul>
+  </nav>
+	<section>
+  <div class="container">
+  <h1>Partie 03: Résumé chapitre 03</h1>
+  <br><hr>
+  <h2>1)Les Composants matériel d’un Réseau informatique:</h2>
+	<div class="row">
+        <div class="col">
+		  <img src="Carte Reseau.png" alt="Carte Reseau">
+          <h3>Les cartes réseau :</h3>
+          <li>Appelées cartes d'interface réseau, sont des composants matériels qui permettent à un ordinateur de se connecter à un réseau, comme Internet ou un réseau local.  </li>
+        </div>
+        <div class="col">
+		<img src="Switch1.png" alt="SWITCH">
+         <h3>Switch: </h3>
+		  <li>Il permet à plusieurs appareils de communiquer entre eux en utilisant des adresses MAC.Ils sont disponibles en différentes tailles et peuvent également offrir des fonctionnalités avancées. </li>		  
+        </div>
+		<div class="col">
+		<img src="Hub1.png" alt="HUB">
+         <h3>HUB: </h3>
+		 <li>C'est un composant matériel utilisé pour connecter plusieurs appareils sur un réseau local.Il fonctionne comme un répéteur, il reçoit les données envoyées par un appareil et les transmet à tous les autres appareils connectés.</li>
+		 </div>
+      </div>
+	  <hr>
+	  <h2>2)Le Modèle OSI: </h2>
+	    <div class="col">
+	<h4>C'est un modèle de référence théorique pour les communications de réseau et n'est pas utilisé dans les protocoles de communication de réseau modernes tels que TCP/I,il divise les communications en sept couches distinctes:</h4>
+	<li>La couche physique: responsable de la transmission des données sur le support physique.</li>
+	<li>La couche liaison de données: responsable de la transmission des données entre les appareils qui partagent un même support physique</li>
+	<li>La couche réseau : responsable du routage des données à travers le réseau. </li>
+	<li>La couche transport: responsable de l'acheminement des données de bout en bout entre les appareils. </li>
+	<li>La couche session : responsable de l'établissement et de la gestion des sessions entre les appareils. </li>
+	<li>La couche présentation : responsable de la conversion des données dans un format qui peut être compris par l'appareil de destination. </li>
+	<li>La couche application : responsable de la communication entre les applications sur les appareils de réseau. </li>
+	    </div>
+		<hr>
+		<h2>3) Le Modèle TCP/IP (Transmission Control Protocol/Internet Protocol)</h2>
+		<div class="col">
+	<h4>C’est une référence pour les communications de réseau, visant a créés et mettre en œuvre des réseaux informatiques modernes .composer de 4 couches de communications principales :</h4>
+	<li>La couche liaison de données : assure le transfert des données sur supports physiques.</li>
+	<li>La couche réseau : chargée de déterminer le chemin des données dans le réseau.</li>
+	<li>La couche transport : se charge de l'acheminement des données entre les appareils. </li>
+	<li>La couche application : facilite de la communication entre les applications sur les périphériques réseau.</li>
+	    </div>
+	 <hr>
+	 <h2>4) L’adressage</h2>
+	 <div class="row">
+	    <div class="col">
+		<h4>Les règles de communications dans un réseau : </h4>
+		<li>Adressage : identifiant de manière unique deux entités communicantes </li>
+		<li>Architecture : définis les rôles des deux unités</li>
+		</div>
+		<div class="col">
+		<h4>Une adresse IP (Internet Protocol) est un numéro identifiant chaque ordinateur sur un réseau auquel il appartient.<br>Il y’a deux mode : </h4>
+		<li>adresse IPV4: (32 bits) Chaque paquet contient : adresse source et adresse destinataire</li>
+		<li>adresse IPV6 : (128 bits) Le texte est représenté en divisant le mot en 8 mots de 16 bits, séparés par le caractère ' : '.</li>
+	    </div>
+	 </div>
+	<hr>
+	 <h2>5) L’adresse IPV4 </h2>
+	 <div class="row">
+	    <div class="col">
+		<h4>-Chaque adresse IPV4 (4 octets) contient deux parties :  </h4>
+		<li>Adresse réseau : des bits de valeur supérieure</li>
+		<li>Adresse hôte : les bits déterminent le nombre des machines possible sur ce réseau</li>
+		<h4>-(Bits partie réseau) = (bits partie hôte) alors le réseau est un {hôte}</h4>
+        <h4>-Les types d’adresse IPV4:</h4>
+         <li>L’adresse réseau : les bits partie hôtes=0 donc les machines du réseau ont la même partie réseau </li>
+         <li>L’adresse de diffusion : les bits de partie hôtes=1</li>
+         <li>L’adresse hôtes : attribue les valeurs entre l’adresse réseau et l’adresse de diffusion sur {machines} dans ce réseau. </li>
+         <li>Le masque de réseau et de sous réseaux : Tous les bits de la partie réseaux = 1 </li>
+	    </div>
+	 </div>
+  <footer>
+   <li>16/05/2023</li>
+   </footer>
+   <button id="btnScrollToTop">
+     <i class="material-icons">arrow_upward</i>
+    </button>
+    <script>
+   btnScrollToTop = document.querySelector("#btnScrollToTop");
+    btnScrollToTop.addEventListener("click", function(){
+     window.scrollTo(0, 0);
+    });
+
+    </script>
+  </body>	
+
+ </html>
